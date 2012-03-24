@@ -1,4 +1,5 @@
-```├── _build_coffee
+```
+├── _build_coffee
 │   └── grunt.js // watch and do coffee compiles - (1)
 ├── _build_sass
 │   └── grunt.js // watch and do sass compiles - (2)
@@ -11,4 +12,5 @@
 │   └── scss // (2) watches this
 │       ├── 1.scss
 │       └── 2.scss
-└── index.html ```
+└── index.html
+```
