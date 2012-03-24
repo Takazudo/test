@@ -14,3 +14,13 @@
 │       └── 2.scss
 └── index.html
 ```
+
+```bash
+$ cd _build_coffee
+$ grunt watch
+```
+
+```bash
+$ cd _build_sass
+$ grunt watch
+```
