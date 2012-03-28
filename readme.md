@@ -1,27 +1,33 @@
 # grunt - parallelwatch example
-```
-├── _build_coffee
-│   └── grunt.js // watch and do coffee compiles - (1)
-├── _build_sass
-│   └── grunt.js // watch and do sass compiles - (2)
-├── common
-│   ├── coffee // (1) watches this
-│   │   ├── 1.coffee
-│   │   └── 2.coffee
-│   ├── css
-│   ├── js
-│   └── scss // (2) watches this
-│       ├── 1.scss
-│       └── 2.scss
-└── index.html
+
+```bash
+.
+|-- common
+|   |-- coffee
+|   |   |-- 1.coffee
+|   |   `-- 2.coffee
+|   |-- css <- compiled css files will be put here
+|   |-- js  <- compiled js files will be put here
+|   `-- scss
+|       |-- 1.scss
+|       `-- 2.scss
+|-- grunt.js
+`-- tasks
+    |-- coffee.js        <- coffee task
+    |-- parallelwatch.js <- parallelwatch task
+    `-- sass.js          <- sass task
 ```
 
 ```bash
-$ cd _build_coffee
-$ grunt watch
+$ grunt
 ```
 
+does tasks both coffee and sass
+
 ```bash
-$ cd _build_sass
-$ grunt watch
+$ grunt parallelwatch
 ```
+
+does tasks do two watches individually coffee and sass.  
+When modify 1.coffee was modified, grunt runs coffee task.  
+When modify 1.scss was modified, grunt runs sass task.  
