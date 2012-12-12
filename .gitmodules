@@ -1,0 +1,3 @@
+[submodule "booo"]
+	path = booo
+	url = git@github.com:Takazudo/jQuery.TmplDeck.git
